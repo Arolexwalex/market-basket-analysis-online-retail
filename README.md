@@ -2,7 +2,7 @@
 # Market Basket Analysis & Product Bundling Recommendations  
 Online Retail Dataset – Association Rule Mining
 
-**Name:** Labambay Olawale  
+**Name:** Olawale Arowojolu 
 **Project Title:** Market Basket Analysis & Product Bundling Recommendations using Association Rule Mining  
 
 ## Project Goal
