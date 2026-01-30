@@ -1,0 +1,111 @@
+=== Run information ===
+
+Scheme:       weka.associations.FPGrowth -P 2 -I -1 -N 50 -T 1 -C 2.0 -D 0.05 -U 1.0 -M 0.02
+Relation:     online_retail_top50_basket-weka.filters.unsupervised.attribute.NominalToBinary-Rfirst-last-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.Remove-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.NumericToBinary-Rfirst-last-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    12088
+Attributes:   50
+              6 RIBBONS RUSTIC CHARM_binarized
+              ALARM CLOCK BAKELIKE GREEN_binarized
+              ALARM CLOCK BAKELIKE RED_binarized
+              ASSORTED COLOUR BIRD ORNAMENT_binarized
+              BAKING SET 9 PIECE RETROSPOT_binarized
+              CHOCOLATE HOT WATER BOTTLE_binarized
+              GARDENERS KNEELING PAD KEEP CALM_binarized
+              GIN + TONIC DIET METAL SIGN_binarized
+              HEART OF WICKER LARGE_binarized
+              HEART OF WICKER SMALL_binarized
+              HOME BUILDING BLOCK WORD_binarized
+              HOT WATER BOTTLE KEEP CALM_binarized
+              JAM MAKING SET PRINTED_binarized
+              JAM MAKING SET WITH JARS_binarized
+              JUMBO BAG ALPHABET_binarized
+              JUMBO BAG PINK POLKADOT_binarized
+              JUMBO BAG RED RETROSPOT_binarized
+              JUMBO BAG VINTAGE LEAF_binarized
+              JUMBO SHOPPER VINTAGE RED PAISLEY_binarized
+              JUMBO STORAGE BAG SUKI_binarized
+              LUNCH BAG  BLACK SKULL._binarized
+              LUNCH BAG APPLE DESIGN_binarized
+              LUNCH BAG CARS BLUE_binarized
+              LUNCH BAG PINK POLKADOT_binarized
+              LUNCH BAG RED RETROSPOT_binarized
+              LUNCH BAG SPACEBOY DESIGN_binarized
+              LUNCH BAG SUKI DESIGN_binarized
+              LUNCH BAG WOODLAND_binarized
+              NATURAL SLATE HEART CHALKBOARD_binarized
+              PACK OF 72 RETROSPOT CAKE CASES_binarized
+              PAPER CHAIN KIT 50'S CHRISTMAS_binarized
+              PAPER CHAIN KIT VINTAGE CHRISTMAS_binarized
+              PARTY BUNTING_binarized
+              PLEASE ONE PERSON METAL SIGN_binarized
+              RABBIT NIGHT LIGHT_binarized
+              RECIPE BOX PANTRY YELLOW DESIGN_binarized
+              RED HANGING HEART T-LIGHT HOLDER_binarized
+              REGENCY CAKESTAND 3 TIER_binarized
+              RETROSPOT TEA SET CERAMIC 11 PC_binarized
+              REX CASH+CARRY JUMBO SHOPPER_binarized
+              ROSES REGENCY TEACUP AND SAUCER_binarized
+              SET OF 3 CAKE TINS PANTRY DESIGN_binarized
+              SET OF 4 PANTRY JELLY MOULDS_binarized
+              SET/5 RED RETROSPOT LID GLASS BOWLS_binarized
+              SPOTTY BUNTING_binarized
+              VICTORIAN GLASS HANGING T-LIGHT_binarized
+              VINTAGE SNAP CARDS_binarized
+              WHITE HANGING HEART T-LIGHT HOLDER_binarized
+              WOODEN FRAME ANTIQUE WHITE_binarized
+              WOODEN PICTURE FRAME WHITE FINISH
+=== Associator model (full training set) ===
+
+FPGrowth found 124 rules (displaying top 50)
+
+ 1. [ALARM CLOCK BAKELIKE GREEN_binarized=1]: 690 ==> [ALARM CLOCK BAKELIKE RED_binarized=1]: 454   conf:(0.66) <lift:(10.49)> lev:(0.03) conv:(2.73) 
+ 2. [ALARM CLOCK BAKELIKE RED_binarized=1]: 758 ==> [ALARM CLOCK BAKELIKE GREEN_binarized=1]: 454   conf:(0.6) <lift:(10.49)> lev:(0.03) conv:(2.34) 
+ 3. [LUNCH BAG PINK POLKADOT_binarized=1]: 848 ==> [LUNCH BAG  BLACK SKULL._binarized=1, LUNCH BAG CARS BLUE_binarized=1]: 250   conf:(0.29) <lift:(8.86)> lev:(0.02) conv:(1.37) 
+ 4. [LUNCH BAG  BLACK SKULL._binarized=1, LUNCH BAG CARS BLUE_binarized=1]: 402 ==> [LUNCH BAG PINK POLKADOT_binarized=1]: 250   conf:(0.62) <lift:(8.86)> lev:(0.02) conv:(2.44) 
+ 5. [LUNCH BAG PINK POLKADOT_binarized=1]: 848 ==> [LUNCH BAG RED RETROSPOT_binarized=1, LUNCH BAG CARS BLUE_binarized=1]: 254   conf:(0.3) <lift:(8.77)> lev:(0.02) conv:(1.38) 
+ 6. [LUNCH BAG RED RETROSPOT_binarized=1, LUNCH BAG CARS BLUE_binarized=1]: 413 ==> [LUNCH BAG PINK POLKADOT_binarized=1]: 254   conf:(0.62) <lift:(8.77)> lev:(0.02) conv:(2.4) 
+ 7. [LUNCH BAG RED RETROSPOT_binarized=1, LUNCH BAG  BLACK SKULL._binarized=1]: 484 ==> [LUNCH BAG PINK POLKADOT_binarized=1]: 293   conf:(0.61) <lift:(8.63)> lev:(0.02) conv:(2.34) 
+ 8. [LUNCH BAG PINK POLKADOT_binarized=1]: 848 ==> [LUNCH BAG RED RETROSPOT_binarized=1, LUNCH BAG  BLACK SKULL._binarized=1]: 293   conf:(0.35) <lift:(8.63)> lev:(0.02) conv:(1.46) 
+ 9. [WOODEN PICTURE FRAME WHITE FINISH=1]: 854 ==> [WOODEN FRAME ANTIQUE WHITE_binarized=1]: 458   conf:(0.54) <lift:(8.27)> lev:(0.03) conv:(2.01) 
+10. [WOODEN FRAME ANTIQUE WHITE_binarized=1]: 784 ==> [WOODEN PICTURE FRAME WHITE FINISH=1]: 458   conf:(0.58) <lift:(8.27)> lev:(0.03) conv:(2.23) 
+11. [PAPER CHAIN KIT 50'S CHRISTMAS_binarized=1]: 945 ==> [PAPER CHAIN KIT VINTAGE CHRISTMAS_binarized=1]: 437   conf:(0.46) <lift:(8.26)> lev:(0.03) conv:(1.75) 
+12. [PAPER CHAIN KIT VINTAGE CHRISTMAS_binarized=1]: 677 ==> [PAPER CHAIN KIT 50'S CHRISTMAS_binarized=1]: 437   conf:(0.65) <lift:(8.26)> lev:(0.03) conv:(2.59) 
+13. [LUNCH BAG CARS BLUE_binarized=1]: 882 ==> [LUNCH BAG  BLACK SKULL._binarized=1, LUNCH BAG PINK POLKADOT_binarized=1]: 250   conf:(0.28) <lift:(7.75)> lev:(0.02) conv:(1.34) 
+14. [LUNCH BAG  BLACK SKULL._binarized=1, LUNCH BAG PINK POLKADOT_binarized=1]: 442 ==> [LUNCH BAG CARS BLUE_binarized=1]: 250   conf:(0.57) <lift:(7.75)> lev:(0.02) conv:(2.12) 
+15. [LUNCH BAG  BLACK SKULL._binarized=1]: 996 ==> [LUNCH BAG CARS BLUE_binarized=1, LUNCH BAG PINK POLKADOT_binarized=1]: 250   conf:(0.25) <lift:(7.66)> lev:(0.02) conv:(1.29) 
+16. [LUNCH BAG CARS BLUE_binarized=1, LUNCH BAG PINK POLKADOT_binarized=1]: 396 ==> [LUNCH BAG  BLACK SKULL._binarized=1]: 250   conf:(0.63) <lift:(7.66)> lev:(0.02) conv:(2.47) 
+17. [LUNCH BAG  BLACK SKULL._binarized=1]: 996 ==> [LUNCH BAG RED RETROSPOT_binarized=1, LUNCH BAG PINK POLKADOT_binarized=1]: 293   conf:(0.29) <lift:(7.55)> lev:(0.02) conv:(1.36) 
+18. [LUNCH BAG RED RETROSPOT_binarized=1, LUNCH BAG PINK POLKADOT_binarized=1]: 471 ==> [LUNCH BAG  BLACK SKULL._binarized=1]: 293   conf:(0.62) <lift:(7.55)> lev:(0.02) conv:(2.41) 
+19. [LUNCH BAG CARS BLUE_binarized=1]: 882 ==> [LUNCH BAG RED RETROSPOT_binarized=1, LUNCH BAG PINK POLKADOT_binarized=1]: 254   conf:(0.29) <lift:(7.39)> lev:(0.02) conv:(1.35) 
+20. [LUNCH BAG RED RETROSPOT_binarized=1, LUNCH BAG PINK POLKADOT_binarized=1]: 471 ==> [LUNCH BAG CARS BLUE_binarized=1]: 254   conf:(0.54) <lift:(7.39)> lev:(0.02) conv:(2) 
+21. [LUNCH BAG RED RETROSPOT_binarized=1, LUNCH BAG CARS BLUE_binarized=1]: 413 ==> [LUNCH BAG  BLACK SKULL._binarized=1]: 247   conf:(0.6) <lift:(7.26)> lev:(0.02) conv:(2.27) 
+22. [LUNCH BAG  BLACK SKULL._binarized=1]: 996 ==> [LUNCH BAG RED RETROSPOT_binarized=1, LUNCH BAG CARS BLUE_binarized=1]: 247   conf:(0.25) <lift:(7.26)> lev:(0.02) conv:(1.28) 
+23. [LUNCH BAG RED RETROSPOT_binarized=1]: 1120 ==> [LUNCH BAG  BLACK SKULL._binarized=1, LUNCH BAG PINK POLKADOT_binarized=1]: 293   conf:(0.26) <lift:(7.15)> lev:(0.02) conv:(1.3) 
+24. [LUNCH BAG  BLACK SKULL._binarized=1, LUNCH BAG PINK POLKADOT_binarized=1]: 442 ==> [LUNCH BAG RED RETROSPOT_binarized=1]: 293   conf:(0.66) <lift:(7.15)> lev:(0.02) conv:(2.67) 
+25. [LUNCH BAG SPACEBOY DESIGN_binarized=1]: 873 ==> [LUNCH BAG WOODLAND_binarized=1]: 346   conf:(0.4) <lift:(7.11)> lev:(0.02) conv:(1.56) 
+26. [LUNCH BAG WOODLAND_binarized=1]: 674 ==> [LUNCH BAG SPACEBOY DESIGN_binarized=1]: 346   conf:(0.51) <lift:(7.11)> lev:(0.02) conv:(1.9) 
+27. [LUNCH BAG CARS BLUE_binarized=1]: 882 ==> [LUNCH BAG RED RETROSPOT_binarized=1, LUNCH BAG  BLACK SKULL._binarized=1]: 247   conf:(0.28) <lift:(6.99)> lev:(0.02) conv:(1.33) 
+28. [LUNCH BAG RED RETROSPOT_binarized=1, LUNCH BAG  BLACK SKULL._binarized=1]: 484 ==> [LUNCH BAG CARS BLUE_binarized=1]: 247   conf:(0.51) <lift:(6.99)> lev:(0.02) conv:(1.89) 
+29. [LUNCH BAG CARS BLUE_binarized=1, LUNCH BAG PINK POLKADOT_binarized=1]: 396 ==> [LUNCH BAG RED RETROSPOT_binarized=1]: 254   conf:(0.64) <lift:(6.92)> lev:(0.02) conv:(2.51) 
+30. [LUNCH BAG RED RETROSPOT_binarized=1]: 1120 ==> [LUNCH BAG CARS BLUE_binarized=1, LUNCH BAG PINK POLKADOT_binarized=1]: 254   conf:(0.23) <lift:(6.92)> lev:(0.02) conv:(1.25) 
+31. [LUNCH BAG  BLACK SKULL._binarized=1, LUNCH BAG CARS BLUE_binarized=1]: 402 ==> [LUNCH BAG RED RETROSPOT_binarized=1]: 247   conf:(0.61) <lift:(6.63)> lev:(0.02) conv:(2.34) 
+32. [LUNCH BAG RED RETROSPOT_binarized=1]: 1120 ==> [LUNCH BAG  BLACK SKULL._binarized=1, LUNCH BAG CARS BLUE_binarized=1]: 247   conf:(0.22) <lift:(6.63)> lev:(0.02) conv:(1.24) 
+33. [HEART OF WICKER SMALL_binarized=1]: 928 ==> [HEART OF WICKER LARGE_binarized=1]: 398   conf:(0.43) <lift:(6.55)> lev:(0.03) conv:(1.63) 
+34. [HEART OF WICKER LARGE_binarized=1]: 791 ==> [HEART OF WICKER SMALL_binarized=1]: 398   conf:(0.5) <lift:(6.55)> lev:(0.03) conv:(1.85) 
+35. [LUNCH BAG CARS BLUE_binarized=1]: 882 ==> [LUNCH BAG WOODLAND_binarized=1]: 319   conf:(0.36) <lift:(6.49)> lev:(0.02) conv:(1.48) 
+36. [LUNCH BAG WOODLAND_binarized=1]: 674 ==> [LUNCH BAG CARS BLUE_binarized=1]: 319   conf:(0.47) <lift:(6.49)> lev:(0.02) conv:(1.76) 
+37. [LUNCH BAG PINK POLKADOT_binarized=1]: 848 ==> [LUNCH BAG CARS BLUE_binarized=1]: 396   conf:(0.47) <lift:(6.4)> lev:(0.03) conv:(1.74) 
+38. [LUNCH BAG CARS BLUE_binarized=1]: 882 ==> [LUNCH BAG PINK POLKADOT_binarized=1]: 396   conf:(0.45) <lift:(6.4)> lev:(0.03) conv:(1.68) 
+39. [LUNCH BAG SUKI DESIGN_binarized=1]: 836 ==> [LUNCH BAG APPLE DESIGN_binarized=1]: 329   conf:(0.39) <lift:(6.38)> lev:(0.02) conv:(1.54) 
+40. [LUNCH BAG APPLE DESIGN_binarized=1]: 746 ==> [LUNCH BAG SUKI DESIGN_binarized=1]: 329   conf:(0.44) <lift:(6.38)> lev:(0.02) conv:(1.66) 
+41. [LUNCH BAG  BLACK SKULL._binarized=1]: 996 ==> [LUNCH BAG PINK POLKADOT_binarized=1]: 442   conf:(0.44) <lift:(6.33)> lev:(0.03) conv:(1.67) 
+42. [LUNCH BAG PINK POLKADOT_binarized=1]: 848 ==> [LUNCH BAG  BLACK SKULL._binarized=1]: 442   conf:(0.52) <lift:(6.33)> lev:(0.03) conv:(1.91) 
+43. [LUNCH BAG PINK POLKADOT_binarized=1]: 848 ==> [LUNCH BAG WOODLAND_binarized=1]: 286   conf:(0.34) <lift:(6.05)> lev:(0.02) conv:(1.42) 
+44. [LUNCH BAG WOODLAND_binarized=1]: 674 ==> [LUNCH BAG PINK POLKADOT_binarized=1]: 286   conf:(0.42) <lift:(6.05)> lev:(0.02) conv:(1.61) 
+45. [LUNCH BAG PINK POLKADOT_binarized=1]: 848 ==> [LUNCH BAG RED RETROSPOT_binarized=1]: 471   conf:(0.56) <lift:(5.99)> lev:(0.03) conv:(2.04) 
+46. [LUNCH BAG RED RETROSPOT_binarized=1]: 1120 ==> [LUNCH BAG PINK POLKADOT_binarized=1]: 471   conf:(0.42) <lift:(5.99)> lev:(0.03) conv:(1.6) 
+47. [LUNCH BAG CARS BLUE_binarized=1]: 882 ==> [LUNCH BAG SUKI DESIGN_binarized=1]: 363   conf:(0.41) <lift:(5.95)> lev:(0.02) conv:(1.58) 
+48. [LUNCH BAG SUKI DESIGN_binarized=1]: 836 ==> [LUNCH BAG CARS BLUE_binarized=1]: 363   conf:(0.43) <lift:(5.95)> lev:(0.02) conv:(1.64) 
+49. [LUNCH BAG SUKI DESIGN_binarized=1]: 836 ==> [LUNCH BAG WOODLAND_binarized=1]: 277   conf:(0.33) <lift:(5.94)> lev:(0.02) conv:(1.41) 
+50. [LUNCH BAG WOODLAND_binarized=1]: 674 ==> [LUNCH BAG SUKI DESIGN_binarized=1]: 277   conf:(0.41) <lift:(5.94)> lev:(0.02) conv:(1.58) 
+
